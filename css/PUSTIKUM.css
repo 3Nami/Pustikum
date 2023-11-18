@@ -36,7 +36,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 12px 16px;
-  background-color: var(--bg) !important;
+  background-color: var(--bg);
   border-bottom: 1px solid white;
   position: fixed;
   top: 0;
@@ -105,24 +105,26 @@ li.dropdown {
 }
 
 .isi-dropdown a:hover {
-  color: #fff !important;
+  color: #fff;
 }
 .isi-dropdown {
   position: absolute;
   display: none;
   z-index: 0.2;
   padding: 12px 16px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(1, 1, 1, 0.2);
+  background-color: var(--bg);
+  border-radius: 12px;
 }
 
 .isi-dropdown a {
-  color: white !important;
+  color: white;
   border-radius: 0;
 }
 
 .isi-dropdown a:hover {
-  color: #fffbfb !important;
-  background: rgb(25, 52, 72) important;
+  color: #fffbfb;
+  background: rgb(25, 52, 72);
   transition: 0.4s;
 }
 
@@ -230,8 +232,15 @@ li.dropdown {
   font-weight: 700;
   text-shadow: 0.5px 0.5px 0.5px rgba(2, 2, 3, 2);
 }
-.sidebar a:hover {
+.sidebar h3 {
+  font-size: 1.7rem;
+}
+.sidebar h3:hover {
   color: rgb(252, 230, 37);
+}
+
+.sidebar a:hover {
+  color: rgb(229, 77, 128);
 }
 
 /* Event section */
@@ -534,7 +543,7 @@ footer .links a {
 
   .isi-dropdown a:hover {
     color: #fffbfb;
-    background: rgb(25, 52, 72) important;
+    background: rgb(25, 52, 72);
     transition: 0.4s;
   }
 
